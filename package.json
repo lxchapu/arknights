@@ -18,6 +18,7 @@
     "vue-router": "^4.2.4"
   },
   "devDependencies": {
+    "@types/lodash-es": "^4.17.8",
     "@types/node": "^20.4.8",
     "@types/parallax-js": "^3.1.0",
     "@vitejs/plugin-vue": "^4.2.3",

@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@types/lodash-es': ^4.17.8
   '@types/node': ^20.4.8
   '@types/parallax-js': ^3.1.0
   '@vitejs/plugin-vue': ^4.2.3
@@ -26,6 +27,7 @@ dependencies:
   vue-router: 4.2.4_vue@3.3.4
 
 devDependencies:
+  '@types/lodash-es': 4.17.8
   '@types/node': 20.4.8
   '@types/parallax-js': 3.1.0
   '@vitejs/plugin-vue': 4.2.3_vite@4.4.8+vue@3.3.4
@@ -369,6 +371,16 @@ packages:
 
   /@types/estree/1.0.1:
     resolution: {integrity: sha512-LG4opVs2ANWZ1TJoKc937iMmNstM/d0ae1vNbnBvBhqCSezgVUOzcLCqbI5elV8Vy6WKwKjaqR+zO9VKirBBCA==}
+    dev: true
+
+  /@types/lodash-es/4.17.8:
+    resolution: {integrity: sha512-euY3XQcZmIzSy7YH5+Unb3b2X12Wtk54YWINBvvGQ5SmMvwb11JQskGsfkH/5HXK77Kr8GF0wkVDIxzAisWtog==}
+    dependencies:
+      '@types/lodash': 4.14.197
+    dev: true
+
+  /@types/lodash/4.14.197:
+    resolution: {integrity: sha512-BMVOiWs0uNxHVlHBgzTIqJYmj+PgCo4euloGF+5m4okL3rEYzM2EEv78mw8zWSMM57dM7kVIgJ2QDvwHSoCI5g==}
     dev: true
 
   /@types/node/20.4.8:

@@ -3,7 +3,7 @@ import Parallax from 'parallax-js'
 import { onBeforeUnmount, onMounted, ref } from 'vue'
 
 const sceneRef = ref<HTMLElement>()
-/** 视差实例 */
+// 视差实例
 let parallaxInst: Parallax | undefined = undefined
 
 onMounted(() => {
