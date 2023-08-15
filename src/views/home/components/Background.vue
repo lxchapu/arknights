@@ -133,6 +133,7 @@ onBeforeUnmount(() => {
       :height="CANVAS_HEIGHT"
       :style="canvasStyle"
     ></canvas>
+    <div class="mask"></div>
   </div>
 </template>
 
@@ -147,5 +148,11 @@ onBeforeUnmount(() => {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.mask {
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(farthest-corner at 65% 50%, transparent 65%, rgba(0, 0, 0, 0.75));
 }
 </style>
