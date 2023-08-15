@@ -5,6 +5,7 @@ import Background from './components/Background.vue'
 import Doctor from './components/Doctor.vue'
 import Character from './components/Character.vue'
 import UserInfo from './components/UserInfo.vue'
+import HeaderMenu from './components/HeaderMenu.vue'
 
 const sceneEle = ref<HTMLElement>()
 // 视差实例
@@ -55,7 +56,9 @@ onBeforeUnmount(() => {
     <!-- 左右菜单 -->
     <div class="layer pointer-events-none" data-depth="0.4"></div>
   </div>
-  <div></div>
+  <div class="fixed left-0 top-0">
+    <HeaderMenu />
+  </div>
 </template>
 
 <style lang="scss" scoped>
