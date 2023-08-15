@@ -4,6 +4,7 @@ import { onBeforeUnmount, onMounted, ref } from 'vue'
 import Background from './components/Background.vue'
 import Doctor from './components/Doctor.vue'
 import Character from './components/Character.vue'
+import UserInfo from './components/UserInfo.vue'
 
 const sceneEle = ref<HTMLElement>()
 // 视差实例
@@ -48,7 +49,9 @@ onBeforeUnmount(() => {
       <Character @click="handleClickCharacter" />
     </div>
     <!-- 用户信息 -->
-    <div class="layer pointer-events-none" data-depth="0.05"></div>
+    <div class="layer pointer-events-none" data-depth="0.05">
+      <UserInfo />
+    </div>
     <!-- 左右菜单 -->
     <div class="layer pointer-events-none" data-depth="0.4"></div>
   </div>
