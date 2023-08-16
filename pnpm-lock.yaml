@@ -11,6 +11,7 @@ specifiers:
   pinia: ^2.1.6
   prettier: ^3.0.1
   sass: ^1.64.2
+  swiper: ^10.1.0
   typescript: ^5.0.2
   unocss: ^0.54.1
   vite: ^4.4.5
@@ -23,6 +24,7 @@ dependencies:
   normalize.css: 8.0.1
   parallax-js: 3.1.0
   pinia: 2.1.6_typescript@5.1.6+vue@3.3.4
+  swiper: 10.1.0
   vue: 3.3.4
   vue-router: 4.2.4_vue@3.3.4
 
@@ -1299,6 +1301,11 @@ packages:
     resolution: {integrity: sha512-BrpvfNAE3dcvq7ll3xVumzjKjZQ5tI1sEUIKr3Uoks0XUl45St3FlatVqef9prk4jRDzhW6WZg+3bk93y6pLjA==}
     engines: {node: '>=6'}
     dev: true
+
+  /swiper/10.1.0:
+    resolution: {integrity: sha512-E+wh+hcSbwlRfXuwBTclcOOikOjNdSF0a2Sdg3J4cIWtHO64A7SaLRfezfrJ67CW3GEc15AduYU2YKlElsjqsQ==}
+    engines: {node: '>= 4.7.0'}
+    dev: false
 
   /to-fast-properties/2.0.0:
     resolution: {integrity: sha512-/OaKK0xYrs3DmxRYqL/yDc+FxFUVYhDlXMhRmv3z915w2HF1tnN1omB354j8VUGO/hbRzyD6Y3sA7v7GS/ceog==}
