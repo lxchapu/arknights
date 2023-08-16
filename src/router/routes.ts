@@ -6,9 +6,4 @@ export const routes: RouteRecordRaw[] = [
     name: 'Home',
     component: () => import('@/views/home/index.vue'),
   },
-  {
-    path: '/test/parallax',
-    name: 'TestParallax',
-    component: () => import('@/views/TestParallax.vue'),
-  }
 ]
