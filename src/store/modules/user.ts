@@ -17,8 +17,7 @@ export const useUserStore = defineStore('user', () => {
   })
 
   const fightInfo = reactive({
-    level: '2-3',
-    name: '无罪推定',
+    name: '2-3 无罪推定',
   })
 
   return {

@@ -7,7 +7,7 @@ import Character from './components/Character.vue'
 import UserInfo from './components/UserInfo.vue'
 import HeaderMenu from './components/HeaderMenu.vue'
 import LeftMenu from './components/left-menu/index.vue'
-import RightMenu from './components/RightMenu.vue'
+import RightMenu from './components/right-menu/index.vue'
 import { random } from 'lodash-es'
 
 const sceneEle = ref<HTMLElement>()
