@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "date-fns": "^2.30.0",
+    "howler": "^2.2.3",
     "lodash-es": "^4.17.21",
     "normalize.css": "^8.0.1",
     "parallax-js": "^3.1.0",
@@ -20,6 +21,7 @@
     "vue-router": "^4.2.4"
   },
   "devDependencies": {
+    "@types/howler": "^2.2.7",
     "@types/lodash-es": "^4.17.8",
     "@types/node": "^20.4.8",
     "@types/parallax-js": "^3.1.0",
