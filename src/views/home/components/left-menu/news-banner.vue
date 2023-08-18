@@ -3,6 +3,37 @@ import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Pagination, Autoplay } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/pagination'
+
+const activityList = [
+  {
+    name: '多利的任务单',
+    bannerImg: '/images/activity/多利的任务单.jpg',
+  },
+  {
+    name: '火山旅梦',
+    bannerImg: '/images/activity/火山旅梦.jpg',
+  },
+  {
+    name: '绿野幻梦',
+    bannerImg: '/images/activity/绿野幻梦.jpg',
+  },
+  {
+    name: '夏日嘉年华',
+    bannerImg: '/images/activity/夏日嘉年华.jpg',
+  },
+  {
+    name: '氤氲奇境',
+    bannerImg: '/images/activity/氤氲奇境.jpg',
+  },
+  {
+    name: '引领者试炼',
+    bannerImg: '/images/activity/引领者试炼.jpg',
+  },
+  {
+    name: '云间清醒梦',
+    bannerImg: '/images/activity/云间清醒梦.jpg',
+  },
+]
 </script>
 
 <template>
@@ -18,17 +49,8 @@ import 'swiper/css/pagination'
       :speed="800"
       :modules="[Autoplay, Pagination]"
     >
-      <SwiperSlide>
-        <img class="banner-image" src="@/assets/images/active1.jpg" alt="active1" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img class="banner-image" src="@/assets/images/active2.jpg" alt="active2" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img class="banner-image" src="@/assets/images/active3.jpg" alt="active3" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img class="banner-image" src="@/assets/images/active4.jpg" alt="active4" />
+      <SwiperSlide v-for="item in activityList" :key="item.name">
+        <img class="banner-image" :src="item.bannerImg" :alt="item.name" />
       </SwiperSlide>
     </Swiper>
   </div>
