@@ -24,6 +24,7 @@
 <style lang="scss" scoped>
 .other-row {
   display: flex;
+  pointer-events: auto;
 }
 
 .task,
@@ -33,6 +34,8 @@
   width: 280px;
   height: 140px;
   background-color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  transition: background-color 0.2s;
 
   &:hover {
     background-color: white;
@@ -90,6 +93,8 @@
   width: 120px;
   height: 140px;
   background-color: #323232;
+  cursor: pointer;
+  transition: background-color 0.2s;
 
   &:hover {
     background-color: #4b4b4b;

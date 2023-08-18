@@ -25,15 +25,18 @@ const userStore = useUserStore()
 
 <style lang="scss" scoped>
 .fight-row {
+  margin-bottom: 16px;
   position: relative;
-  width: 800px;
-  height: 200px;
   padding: 12px;
+  width: 780px;
+  height: 200px;
+  color: #333;
   background-color: rgba(255, 255, 255, 0.9);
   display: flex;
   align-items: center;
-  color: #333;
-  margin-bottom: 16px;
+  pointer-events: auto;
+  cursor: pointer;
+  transition: background-color 0.2s;
 
   &:hover {
     background-color: white;

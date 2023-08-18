@@ -15,15 +15,17 @@ defineEmits<{
 <template>
   <div class="left-menu">
     <VoiceBox v-show="voice" :text="voice" @click="$emit('clear-voice')" />
-    <div class="banner-container">
+    <div class="flex">
       <NewsBanner />
-      <div class="button friend-button">
-        <IconFriend class="icon" fill="white" width="50px" />
-        <span class="text">好友</span>
-      </div>
-      <div class="button archive-button">
-        <IconArchive class="icon" fill="rgba(0,0,0,0.38)" width="50px" />
-        <span class="text">档案</span>
+      <div>
+        <div class="button friend-button">
+          <IconFriend class="icon" />
+          <span class="text">好友</span>
+        </div>
+        <div class="button archive-button">
+          <IconArchive class="icon" />
+          <span class="text">档案</span>
+        </div>
       </div>
     </div>
   </div>
@@ -34,52 +36,62 @@ defineEmits<{
   position: absolute;
   top: 0;
   left: 0;
-  width: 600px;
   height: 100%;
-  transform-origin: left center;
-  transform: perspective(600px) rotateY(13deg);
+  user-select: none;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  pointer-events: none;
-}
 
-.banner-container {
-  display: grid;
-  gap: 4px 10px;
-  margin: 10px;
-  grid-template-columns: 3fr 2fr;
-  grid-template-rows: 1fr 1fr;
+  transform-origin: left center;
+  transform: perspective(600px) rotateY(10deg);
 }
 
 .news-banner {
-  grid-row: 1 / 3;
+  margin-right: 10px;
+  pointer-events: auto;
 }
 
 .button {
-  position: relative;
-  flex-grow: 1;
-  cursor: pointer;
+  width: 150px;
+  padding: 6px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 5px;
   pointer-events: auto;
+  cursor: pointer;
+  transition: background-color 0.2s;
 
   .text {
     font-family: 'FZSong';
-    font-size: 35px;
+    font-size: 32px;
+  }
+
+  .icon {
+    font-size: 46px;
   }
 }
 
 .friend-button {
-  color: #ffffff;
+  color: white;
   background-color: rgba(50, 50, 50, 0.9);
   box-shadow: 0 0 10px 0 #222222;
+  margin-bottom: 4px;
+
+  &:hover {
+    background-color: rgb(50, 50, 50);
+  }
 }
 .archive-button {
   color: #323232;
   background-color: rgba(255, 255, 255, 0.9);
   box-shadow: 0 0 10px 0 #aaaaaa;
+
+  &:hover {
+    background-color: white;
+  }
+
+  .icon {
+    color: rgba(0, 0, 0, 0.38);
+  }
 }
 </style>

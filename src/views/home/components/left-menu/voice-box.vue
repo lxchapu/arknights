@@ -16,11 +16,12 @@ defineProps<{
 
 <style lang="scss" scoped>
 .voice-box {
-  background: rgba(0, 0, 0, 0.6);
-  color: #ffffff;
   position: relative;
-  margin: 0 10px;
+  margin-bottom: 16px;
   padding: 20px;
+  width: 450px;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
   pointer-events: auto;
 }
 

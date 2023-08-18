@@ -9,14 +9,12 @@ import OtherRow from './other-row.vue'
 
 <template>
   <div class="right-menu">
-    <div class="content">
-      <SystemInfo />
-      <AssetInfo />
-      <FightRow />
-      <TeamRow />
-      <ShopRow />
-      <OtherRow />
-    </div>
+    <SystemInfo />
+    <AssetInfo />
+    <FightRow />
+    <TeamRow />
+    <ShopRow />
+    <OtherRow />
   </div>
 </template>
 
@@ -26,16 +24,12 @@ import OtherRow from './other-row.vue'
   top: 0;
   right: 0;
   height: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.content {
+  user-select: none;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+
   transform-origin: right center;
-  pointer-events: auto;
-  user-select: none;
   transform: perspective(600px) rotateY(-10deg);
 }
 </style>

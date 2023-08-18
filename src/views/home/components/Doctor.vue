@@ -8,9 +8,9 @@
 
 <style lang="scss" scoped>
 .img {
-  width: 6%;
+  width: 90px;
   position: relative;
-  left: -30%;
-  top: 13%;
+  left: -32%;
+  top: 4%;
 }
 </style>

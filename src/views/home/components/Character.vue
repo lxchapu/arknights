@@ -12,9 +12,9 @@ defineEmits<{
 
 <style lang="scss" scoped>
 .img {
-  width: 38%;
+  width: 800px;
   position: relative;
   top: 15%;
-  left: -4%;
+  left: -10%;
 }
 </style>

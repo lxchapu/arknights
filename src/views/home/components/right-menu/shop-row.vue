@@ -33,7 +33,8 @@
   margin-bottom: 16px;
   display: flex;
   color: white;
-  transform: translateX(80px);
+  transform: translateX(60px);
+  pointer-events: auto;
 }
 
 .left,
@@ -46,6 +47,8 @@
   position: relative;
   width: 280px;
   padding: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
 
   &:hover {
     background-color: rgb(10, 172, 223);
@@ -85,6 +88,8 @@
   background-color: #323232;
   height: 36px;
   align-items: center;
+  cursor: pointer;
+  transition: background-color 0.2s;
 
   &:hover {
     background-color: #4b4b4b;
@@ -112,6 +117,8 @@
     position: relative;
     overflow: hidden;
     box-shadow: inset 0 0 10px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: background-color 0.2s;
 
     &:hover {
       background-color: rgb(10, 172, 223);

@@ -31,21 +31,20 @@ const userStore = useUserStore()
   display: flex;
   align-items: center;
   margin-bottom: 16px;
-  padding-left: 80px;
-  transform: translateX(-80px);
+  pointer-events: auto;
 }
 .asset-info::before {
   content: '';
   position: absolute;
-  z-index: -1;
   top: 7px;
-  left: 0;
+  left: -80px;
   right: 0;
   bottom: 7px;
   background-color: rgba(0, 0, 0, 0.2);
 }
 
 .item {
+  position: relative;
   display: flex;
   align-items: center;
   font-size: 30px;

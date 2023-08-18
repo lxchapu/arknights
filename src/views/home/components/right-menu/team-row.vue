@@ -19,19 +19,23 @@
 
 <style lang="scss" scoped>
 .team-row {
-  width: 880px;
+  position: relative;
   margin-bottom: 16px;
+  width: 740px;
   display: flex;
   transform: translateX(-40px);
+  pointer-events: auto;
 }
 
 .item {
   position: relative;
   padding: 16px;
-  width: 340px;
+  flex: 1;
   height: 140px;
   background-color: rgba(255, 255, 255, 0.9);
   margin-right: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s;
 
   &:hover {
     background-color: white;
@@ -68,8 +72,11 @@
 }
 
 .black {
-  flex: 1;
-  height: 140px;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 150px;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
 }
 </style>

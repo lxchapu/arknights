@@ -37,7 +37,7 @@ import 'swiper/css/pagination'
 <style lang="scss" scoped>
 .news-banner {
   position: relative;
-  width: 360px;
+  width: 290px;
   pointer-events: auto;
 }
 
@@ -50,15 +50,16 @@ import 'swiper/css/pagination'
 }
 
 .banner-image {
+  display: block;
   width: 100%;
-  height: 120px;
+  height: 110px;
   object-fit: cover;
 }
 
 .swiper {
   :deep(.swiper-pagination) {
     display: flex;
-    margin-top: 4px;
+    margin-top: 5px;
     position: static;
   }
 

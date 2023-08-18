@@ -50,6 +50,7 @@ onBeforeUnmount(() => {
   color: white;
   display: flex;
   align-items: center;
+  pointer-events: auto;
 }
 
 .line {
