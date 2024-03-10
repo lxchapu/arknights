@@ -7,31 +7,31 @@ import 'swiper/css/pagination'
 const activityList = [
   {
     name: '多利的任务单',
-    bannerImg: '/images/activity/多利的任务单.jpg',
+    bannerImg: 'https://s2.loli.net/2024/03/10/6AvuT8bzCQJ3hIs.webp',
   },
   {
     name: '火山旅梦',
-    bannerImg: '/images/activity/火山旅梦.jpg',
+    bannerImg: 'https://s2.loli.net/2024/03/10/4GwmTcZqC3nK5kA.webp',
   },
   {
     name: '绿野幻梦',
-    bannerImg: '/images/activity/绿野幻梦.jpg',
+    bannerImg: 'https://s2.loli.net/2024/03/10/HZjIaATlV4O3bpK.webp',
   },
   {
     name: '夏日嘉年华',
-    bannerImg: '/images/activity/夏日嘉年华.jpg',
+    bannerImg: 'https://s2.loli.net/2024/03/10/SGJDTIl1RKXFU2d.webp',
   },
   {
     name: '氤氲奇境',
-    bannerImg: '/images/activity/氤氲奇境.jpg',
+    bannerImg: 'https://s2.loli.net/2024/03/10/nxrvcqEVasldZHz.webp',
   },
   {
     name: '引领者试炼',
-    bannerImg: '/images/activity/引领者试炼.jpg',
+    bannerImg: 'https://s2.loli.net/2024/03/10/seo45L3kwP281yU.webp',
   },
   {
     name: '云间清醒梦',
-    bannerImg: '/images/activity/云间清醒梦.jpg',
+    bannerImg: 'https://s2.loli.net/2024/03/10/GuFlTXJ7jkA9YgV.webp',
   },
 ]
 </script>

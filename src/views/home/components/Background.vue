@@ -144,7 +144,7 @@ onBeforeUnmount(() => {
   height: 110%;
   left: -5%;
   top: -5%;
-  background-image: url('@/assets/images/background.png');
+  background-image: url('https://s2.loli.net/2024/03/10/oNEztc1JnGpvWOZ.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
